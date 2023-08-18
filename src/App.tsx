@@ -1,9 +1,22 @@
+import { Home } from "./pages/Home";
+import { Contact } from "./pages/Contact";
+import { AboutUs } from "./pages/AboutUs";
+import { Products } from "./pages/Products";
+import { Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <h1>Miso Woods </h1>
-    </>
+    <div className="app">
+      <Router basename="/">
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
