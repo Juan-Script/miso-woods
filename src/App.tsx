@@ -7,8 +7,6 @@ import { AboutUs } from "./pages/AboutUs";
 import { Products } from "./pages/Products";
 import { Header } from "./components/shared/Header";
 
-import "./index.css";
-
 function App() {
   return (
     <div className="app">

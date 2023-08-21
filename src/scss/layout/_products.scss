@@ -1,0 +1,54 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card span {
+  font-weight: bold;
+  color: #e44d26; /* Color para el precio */
+}

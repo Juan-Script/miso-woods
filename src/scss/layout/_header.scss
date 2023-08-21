@@ -7,4 +7,19 @@ img {
 .icons {
   gap: 20px;
   color: white;
+  width: 156px;
+  flex-direction: row;
+  display: flex;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+logo {
+  width: 156px;
 }

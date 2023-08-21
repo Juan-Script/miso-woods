@@ -1,4 +1,3 @@
-import { Flex, Icon } from "@chakra-ui/react";
 import Navbar from "../shared/Navbar";
 import logo from "../../assets/Logos_MisoWoods/logo-blanco.svg";
 import { BiCart } from "react-icons/bi";
@@ -8,17 +7,19 @@ import "../../css/styles.css";
 
 export const Header = () => {
   return (
-    <Flex>
-      <Flex>
+    <div className="header">
+      <div className="logo">
         <img src={logo} alt="img/logo" />
-      </Flex>
-      <Flex>
+      </div>
+
+      <div className="navbar">
         <Navbar />
-      </Flex>
-      <Flex className="icons">
-        <Icon as={BiCart} />
-        <Icon as={BsFillPersonFill} />
-      </Flex>
-    </Flex>
+      </div>
+
+      <div className="icons">
+        <BiCart />
+        <BsFillPersonFill />
+      </div>
+    </div>
   );
 };
