@@ -1,4 +1,3 @@
-import { Box, Grid, GridItem, Text, Image, Card } from "@chakra-ui/react";
 import Shoyu from "../assets/Products/Shoyu.jpg";
 import Miso from "../assets/Products/2kbs.jpg";
 import Tonkotsu from "../assets/Products/tonkotsu1.jpg";

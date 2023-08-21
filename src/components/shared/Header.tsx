@@ -3,8 +3,6 @@ import logo from "../../assets/Logos_MisoWoods/logo-blanco.svg";
 import { BiCart } from "react-icons/bi";
 import { BsFillPersonFill } from "react-icons/bs";
 
-import "../../css/styles.css";
-
 export const Header = () => {
   return (
     <div className="header">

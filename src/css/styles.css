@@ -9,21 +9,12 @@ body {
   color: white;
 }
 
-body,
-h1,
-h2,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding-right: 90px;
+  padding-left: 90px;
 }
 
 .grid-item {
@@ -61,7 +52,6 @@ li {
 
 .card span {
   font-weight: bold;
-  color: #e44d26; /* Color para el precio */
 }
 
 span {

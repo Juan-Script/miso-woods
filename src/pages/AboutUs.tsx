@@ -1,5 +1,3 @@
-import { Heading } from "@chakra-ui/react";
-
 export const AboutUs = () => {
-  return <Heading className="heading">About Us</Heading>;
+  return <h1 className="heading">About Us</h1>;
 };
