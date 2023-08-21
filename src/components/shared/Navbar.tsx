@@ -1,0 +1,21 @@
+import { NavLink } from "react-router-dom";
+import "../../css/styles.css";
+
+export default function Navbar() {
+  const Links = [
+    { href: "/", text: "Home" },
+    { href: "/products", text: "Products" },
+    { href: "/aboutus", text: "About Us" },
+    { href: "/contact", text: "Contact" },
+  ];
+
+  return (
+    <div className="div">
+      {Links?.map((link: any, index: number) => (
+        <NavLink className={"navbar"} to={link?.href} key={index}>
+          <span>{link?.text}</span>
+        </NavLink>
+      ))}
+    </div>
+  );
+}

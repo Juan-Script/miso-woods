@@ -1,8 +1,5 @@
-import { Heading } from "@chakra-ui/react"
-
+import { Heading } from "@chakra-ui/react";
 
 export const Contact = () => {
-    return (
-        <Heading>Contact</Heading>
-    )
-}
+  return <Heading className="heading">Contact</Heading>;
+};

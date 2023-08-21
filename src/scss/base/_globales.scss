@@ -1,0 +1,6 @@
+@use "../base/variables" as v;
+
+body {
+  background: #1f2420;
+  font-family: v.$poppins !important;
+}
