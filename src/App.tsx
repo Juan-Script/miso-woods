@@ -6,7 +6,7 @@ import { Contact } from "./pages/Contact/Contact";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import { Products } from "./pages/Products/Products";
 import { Header } from "./components/shared/Header";
-import { CardProduct } from "./pages/Products/components/CardProduct";
+import { CardProduct } from "./pages/Products/views/CardProduct";
 
 function App() {
   return (

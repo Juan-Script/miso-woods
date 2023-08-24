@@ -3,11 +3,16 @@
 }
 
 .product {
-  position: relative;
   display: flex;
+  align-items: start;
 }
 
-.productspecs {
+.slider {
+  margin-right: 50px;
+}
+
+.product-right {
+  margin-right: 200px;
 }
 
 .swiper {
@@ -20,6 +25,16 @@
   color: #ffffff;
 }
 
+hr {
+  height: 1px;
+  background-color: #bdbdbd;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+}
 .button {
   margin-top: 15px;
   appearance: none;

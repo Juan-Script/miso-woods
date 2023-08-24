@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 // Slider import
 // Mock import
 import { slides } from "../../../data/mock";
-import { Slider } from "./Slider";
+import { Slider } from "../components/Slider";
 
 interface Keyboard {
   id: number;
@@ -21,7 +21,7 @@ interface Keyboard {
 }
 
 export const CardProduct = () => {
-  const [keyboards, setKeyboards] = useState<Keyboard[] | undefined>([]);
+  const [_keyboards, setKeyboards] = useState<Keyboard[] | undefined>([]);
 
   useEffect(() => {
     getData();
@@ -38,36 +38,39 @@ export const CardProduct = () => {
       });
   };
 
-  const products = [
-    {
-      id: 1,
-      name: "Tonkotsu",
-      desc: "Purposeful design in an inspiring page",
-      image: Tonkotsu,
-    },
-    {
-      id: 2,
-      name: "Miso",
-      desc: "Wood is everything",
-      image: Miso,
-    },
-    {
-      id: 3,
-      name: "Shoyu",
-      desc: "Cozy with wood",
-      image: Shoyu,
-    },
-  ];
+  // const _products = [
+  //   {
+  //     id: 1,
+  //     name: "Tonkotsu",
+  //     desc: "Purposeful design in an inspiring page",
+  //     image: Tonkotsu,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Miso",
+  //     desc: "Wood is everything",
+  //     image: Miso,
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Shoyu",
+  //     desc: "Cozy with wood",
+  //     image: Shoyu,
+  //   },
+  // ];
 
   return (
     <div className="grid">
       <div className="product">
-        <Slider slides={slides} />
-        <div>
+        <div className="slider">
+          <Slider slides={slides} />
+        </div>
+
+        <div className="product-right">
           <h1>Tonkotsu</h1>
           <h3>99$</h3>
           <p>Lorem ipsum dolor sit amet</p>
-          <div>
+          <div className="buttons">
             <button className="button">Add to cart</button>
             <button className="button">Quantity</button>
           </div>

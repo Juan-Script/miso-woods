@@ -11,6 +11,7 @@ export const Slider = ({ slides }: { slides: SlidesInt[] }) => {
     <Swiper
       spaceBetween={1}
       centeredSlides={true}
+      slidesPerView={1}
       autoplay={{
         delay: 10000,
         disableOnInteraction: false,

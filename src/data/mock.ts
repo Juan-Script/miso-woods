@@ -7,7 +7,6 @@ export const slides: SlidesInt[] = [
       "https://utfs.io/f/82ef65fa-191d-41c3-8465-a09b6d6296e2_photo_5990077385086713773_y.jpg",
       "https://utfs.io/f/0be2597b-422c-4770-a502-346eb1b199d8_photo_5990077385086713784_y.jpg",
       "https://utfs.io/f/7d763bb7-e5eb-4285-9300-cafdf5e0c470_photo_5990077385086713782_y.jpg",
-      "https://utfs.io/f/de131941-a068-4c33-84a2-a64cd560425a_photo_5990077385086713783_y.jpg",
     ],
     slug: "tonkotsu",
   },
