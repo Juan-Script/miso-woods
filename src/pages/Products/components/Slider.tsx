@@ -8,28 +8,40 @@ import { SlidesInt } from "../../../data/mock";
 
 export const Slider = ({ slides }: { slides: SlidesInt[] }) => {
   return (
-    <Swiper
-      spaceBetween={1}
-      centeredSlides={true}
-      slidesPerView={1}
-      autoplay={{
-        delay: 10000,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper"
-    >
+    <AwesomeSlider className="slider">
       {slides[0].image.map((slide: any) => (
-        <SwiperSlide key={slide.image}>
+        <div key={slide.image}>
           <div className="product-img">
             <img src={slide} alt={`img/${slide?.name}`} />
           </div>
-        </SwiperSlide>
+        </div>
       ))}
-    </Swiper>
+    </AwesomeSlider>
+    // <Swiper
+    //   spaceBetween={1}
+    //   centeredSlides={true}
+    //   slidesPerView={1}
+    //   autoplay={{
+    //     delay: 10000,
+    //     disableOnInteraction: false,
+    //   }}
+    //   pagination={{
+    //     clickable: true,
+    //   }}
+    //   navigation={true}
+    //   modules={[Autoplay, Pagination, Navigation]}
+    //   className="mySwiper"
+    // >
+    //   {slides[0].image.map((slide: any) => (
+    //     <SwiperSlide key={slide.image}>
+    //       <div className="product-img">
+    //         <img src={slide} alt={`img/${slide?.name}`} />
+    //       </div>
+    //     </SwiperSlide>
+    //   ))}
+    // </Swiper>
   );
 };
+
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";

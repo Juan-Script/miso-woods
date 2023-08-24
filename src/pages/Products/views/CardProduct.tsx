@@ -12,8 +12,6 @@ interface Keyboard {
   id: number;
   name: string;
   slides: any;
-
-  // Otras propiedades de tu objeto de teclado
 }
 
 export const CardProduct = () => {
