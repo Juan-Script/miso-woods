@@ -3,7 +3,6 @@ import "../../css/styles.css";
 
 export default function Navbar() {
   const Links = [
-    { href: "/", text: "Home" },
     { href: "/products", text: "Products" },
     { href: "/aboutus", text: "About Us" },
     { href: "/contact", text: "Contact" },
