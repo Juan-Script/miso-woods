@@ -1,9 +1,5 @@
 // Images imports
 
-import Shoyu from "../../../assets/Products/Shoyu.jpg";
-import Miso from "../../../assets/Products/tonkotsu1.jpg";
-import Tonkotsu from "../../../assets/Products/2kbs.jpg";
-
 import { getKeyboards } from "../../../shared/middlewares/getKeyboards";
 import { useEffect, useState } from "react";
 
