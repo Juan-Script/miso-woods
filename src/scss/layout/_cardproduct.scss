@@ -4,7 +4,10 @@
 
 .product {
   display: flex;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .slider {
@@ -13,16 +16,6 @@
 
 .product-right {
   margin-right: 200px;
-}
-
-.swiper {
-  max-width: 600px;
-  max-height: 100%;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #ffffff;
 }
 
 hr {

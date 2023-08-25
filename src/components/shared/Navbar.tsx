@@ -12,7 +12,7 @@ export default function Navbar() {
     <div className="div">
       {Links?.map((link: any, index: number) => (
         <NavLink className="navbar" to={link?.href} key={index}>
-          <span>{link?.text}</span>
+          <span className="span">{link?.text}</span>
         </NavLink>
       ))}
     </div>

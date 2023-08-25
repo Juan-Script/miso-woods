@@ -1,7 +1,3 @@
-import Shoyu from "../../assets/Products/Shoyu.jpg";
-import Miso from "../../assets/Products/tonkotsu1.jpg";
-import Tonkotsu from "../../assets/Products/2kbs.jpg";
-
 import { Link } from "react-router-dom";
 
 export const Products = () => {
@@ -10,21 +6,24 @@ export const Products = () => {
       id: 1,
       name: "Tonkotsu",
       desc: "Purposeful design in an inspiring page",
-      image: Tonkotsu,
+      image:
+        "https://utfs.io/f/e4ba92d7-9e70-4892-b0f3-c5ac41a8e649_Tonkotsu%202.jpg",
       slug: "tonkotsu",
     },
     {
       id: 2,
       name: "Miso",
       desc: "Wood is everything",
-      image: Miso,
+      image:
+        "https://utfs.io/f/b05b8031-02e3-42d1-9f18-324069c54afc_TonkyShoyu.jpg",
       slug: "miso",
     },
     {
       id: 3,
       name: "Shoyu",
       desc: "Cozy with wood",
-      image: Shoyu,
+      image:
+        "https://utfs.io/f/303404da-c2b6-454a-b621-c1e304a7798c_Shoyu%201.jpg",
       slug: "shoyu",
     },
   ];
