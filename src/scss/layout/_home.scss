@@ -1,3 +1,17 @@
 .heading {
   color: white;
 }
+
+.grid {
+  &-img {
+  }
+  &-heading {
+  }
+}
+.homeimg {
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}

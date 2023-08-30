@@ -9,6 +9,14 @@ body {
   color: white;
 }
 
+.homeimg {
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 .grid {
   display: grid;
   padding-right: 90px;
@@ -203,6 +211,10 @@ logo {
 
 .product-right {
   margin-right: 200px;
+}
+
+.more {
+  margin-top: 150px;
 }
 
 hr {

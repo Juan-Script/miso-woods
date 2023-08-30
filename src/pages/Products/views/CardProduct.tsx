@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 // Mock import
 import { slides } from "../../../data/mock";
 import { Slider } from "../components/Slider";
+import { useParams } from "react-router-dom";
 
 interface Keyboard {
   id: number;
@@ -16,6 +17,7 @@ interface Keyboard {
 
 export const CardProduct = () => {
   const [_keyboards, setKeyboards] = useState<Keyboard[] | undefined>([]);
+  const { slug } = useParams();
 
   useEffect(() => {
     getData();
@@ -32,27 +34,6 @@ export const CardProduct = () => {
       });
   };
 
-  // const _products = [
-  //   {
-  //     id: 1,
-  //     name: "Tonkotsu",
-  //     desc: "Purposeful design in an inspiring page",
-  //     image: Tonkotsu,
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Miso",
-  //     desc: "Wood is everything",
-  //     image: Miso,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Shoyu",
-  //     desc: "Cozy with wood",
-  //     image: Shoyu,
-  //   },
-  // ];
-
   return (
     <div className="grid">
       <div className="product">
@@ -61,7 +42,7 @@ export const CardProduct = () => {
         </div>
 
         <div className="product-right">
-          <h1>Tonkotsu</h1>
+          <h1>{slug}</h1>
           <h3>99$</h3>
           <p>Lorem ipsum dolor sit amet</p>
           <div className="buttons">
@@ -101,9 +82,11 @@ export const CardProduct = () => {
       </div>
       <div className="images"></div>
       <div className="more">
-        <img />
-        <img />
-        <img />
+        {slides[0].image.map((slide: any) => (
+          <div className="product-img">
+            <img src={slide} alt={`img/${slide?.name}`} key={slide.image} />
+          </div>
+        ))}
       </div>
     </div>
   );
