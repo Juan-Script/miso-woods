@@ -7,7 +7,7 @@ export const Products = () => {
       name: "Tonkotsu",
       desc: "Purposeful design in an inspiring page",
       image:
-        "https://utfs.io/f/e4ba92d7-9e70-4892-b0f3-c5ac41a8e649_Tonkotsu%202.jpg",
+        "https://uploadthing.com/f/236423d2-f4a4-48ef-b10d-cf89717c2bd6_Tonkotsu%208.jpg",
       slug: "tonkotsu",
     },
     {
@@ -35,21 +35,27 @@ export const Products = () => {
         <h3>Miso Woods Keyboards Collection</h3>
       </div>
       <hr className="hr" />
-      {products.map((product) => (
-        <div key={product.slug} className="grid-item">
-          <div className="card">
-            <img src={product.image} alt={product.name} className="card-img" />
+      <div className="allcards">
+        {products.map((product) => (
+          <div key={product.slug} className="grid-item">
+            <div className="card">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="card-img"
+              />
 
-            <div className="card-content">
-              <h2>{product.name}</h2>
-              <p className="descripcion">{product.desc}</p>
-              <Link to={`/products/${product.slug}`}>
-                <button className="button">See more</button>
-              </Link>
+              <div className="card-content">
+                <h2>{product.name}</h2>
+                <p className="descripcion">{product.desc}</p>
+                <Link to={`/products/${product.slug}`}>
+                  <button className="button">See more</button>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

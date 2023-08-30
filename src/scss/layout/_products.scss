@@ -2,6 +2,8 @@
   display: grid;
   padding-right: 90px;
   padding-left: 90px;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .grid-item {
@@ -14,6 +16,8 @@
   text-align: left;
   position: relative;
   width: 1000px;
+  align-items: center;
+  margin-bottom: 20px;
 
   &-img {
     object-fit: cover;
@@ -25,6 +29,7 @@
 
 .title {
   text-align: center;
+  margin: 70px;
 }
 
 .title h1 {
