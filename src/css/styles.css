@@ -1,32 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #171717 !important;
   font-family: "Poppins", sans-serif !important;
   color: white !important;
 }
 
-.heading {
-  color: white;
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-.homeimg {
+.grid .topimg {
   position: absolute;
-  top: -20px;
+  top: -120px;
   z-index: -1;
+  width: 100%;
+  height: 700px;
+}
+.grid .topimg img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
+.grid .h1 {
+  margin-top: 300px !important;
+  margin: 90px;
+}
 
-.grid {
+.box {
+  background-color: white;
+  color: black;
+}
+
+.products {
   display: grid;
-  padding-right: 90px;
-  padding-left: 90px;
-  margin: 0 auto;
-  width: 50%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.products img {
+  width: 90%;
+  height: auto;
+}
+
+.artisans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.artisans img {
+  width: 90%;
+  height: auto;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
 }
 
 .grid-item {
   text-align: center;
+}
+
+.allcards {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
@@ -167,12 +226,6 @@ body {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  align-items: start;
-}
-
 .icons {
   gap: 20px;
   color: white;
@@ -228,7 +281,7 @@ hr {
   gap: 14px;
 }
 
-.button {
+button {
   margin-top: 15px;
   appearance: none;
   background-color: #fafbfc;
@@ -255,34 +308,34 @@ hr {
   word-wrap: break-word;
 }
 
-.button:hover {
+button:hover {
   background-color: #b2e6bd;
   text-decoration: none;
   transition-duration: 0.1s;
 }
 
-.button:disabled {
+button:disabled {
   background-color: #fafbfc;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959da5;
   cursor: default;
 }
 
-.button:active {
+button:active {
   background-color: #edeff2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
 
-.button:focus {
+button:focus {
   outline: 1px transparent;
 }
 
-.button:before {
+button:before {
   display: none;
 }
 
-.button:-webkit-details-marker {
+button:-webkit-details-marker {
   display: none;
 }
 

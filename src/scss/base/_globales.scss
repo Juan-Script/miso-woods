@@ -1,5 +1,22 @@
 @use "../base/variables" as v;
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #171717 !important;
   font-family: v.$poppins !important;
