@@ -7,6 +7,7 @@ import { AboutUs } from "./pages/AboutUs/AboutUs";
 import { Products } from "./pages/Products/Products";
 import { Header } from "./components/shared/Header";
 import { CardProduct } from "./pages/Products/views/CardProduct";
+import { Footer } from "./components/shared/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="aboutus/" element={<AboutUs />} />
           <Route path="contact/" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

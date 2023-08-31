@@ -1,0 +1,77 @@
+.footer_grid {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  color: black;
+  align-items: center;
+}
+
+.footer_hr {
+  color: black;
+  width: 90%;
+  margin-bottom: -100px;
+  margin-top: 100px;
+}
+.input-container {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.footer_container_input {
+  gap: 20px;
+}
+
+.signup-container {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-button {
+  position: relative;
+
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin: 170px;
+}
+.footer_content_sitemap {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.footer_content_newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer_bottom {
+  margin-bottom: 30px;
+}
+
+.hr {
+  color: black;
+}
+
+.sitemap_title {
+  margin-bottom: 20px;
+}

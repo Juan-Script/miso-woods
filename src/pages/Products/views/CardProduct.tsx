@@ -53,7 +53,7 @@ export const CardProduct = () => {
       </div>
       <div className="productspecs">
         <h3>Product</h3>
-        <hr />
+        <hr className="hr" />
         <div className="specs">
           <h4>Specs</h4>
           <li>60% burger mounted Keyboard</li>
