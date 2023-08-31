@@ -34,7 +34,7 @@ export const Products = () => {
         <h1>All Keyboards</h1>
         <h3>Miso Woods Keyboards Collection</h3>
       </div>
-      <hr className="hr" />
+
       <div className="allcards">
         {products.map((product) => (
           <div key={product.slug} className="grid-item">
