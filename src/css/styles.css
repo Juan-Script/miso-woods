@@ -75,6 +75,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 390px;
+  object-fit: cover;
 }
 
 .artisans {
@@ -402,7 +403,7 @@ button:-webkit-details-marker {
 .input-container {
   position: relative;
   width: 300px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .footer_container_input {
@@ -410,7 +411,7 @@ button:-webkit-details-marker {
 }
 
 .signup-container {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 input {
@@ -423,9 +424,8 @@ input {
 .signup-button {
   position: relative;
   padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border: 1px solid #ccc;
+  background-color: black;
+  color: white;
   border-radius: 4px;
   cursor: pointer;
 }
