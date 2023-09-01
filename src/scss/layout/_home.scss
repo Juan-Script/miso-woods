@@ -47,13 +47,16 @@
   margin-right: auto;
   position: relative;
   padding: 50px;
-  gap: 25px; /* Añade espacio entre las imágenes */
+  gap: 25px;
+  border-radius: 15px;
 
   img {
     width: 100%;
     height: auto;
     min-height: 390px;
     object-fit: cover;
+    border-radius: 5px;
+  
   }
 }
 
@@ -95,4 +98,31 @@
 
 .artisans_img {
   margin-top: -100px !important;
+}
+
+.artisans {
+  img {
+    border-radius: 10px;
+  }
+}
+
+.product {
+  position: relative;
+  display: inline-block;
+}
+
+.product-name {
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 5px;
+  margin: 7px;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.product:hover .product-name {
+  opacity: 1; 
 }

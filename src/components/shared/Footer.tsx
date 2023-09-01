@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <div className="footer_grid">
-      <hr className="footer_hr"></hr>
+     
       <div className="footer_content">
         <div className="footer_content_newsletter">
           <div className="footer_content_newsletter_title">

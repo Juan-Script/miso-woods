@@ -17,12 +17,29 @@ export const Home = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </h5>
           </div>
+          <a href="/products">
           <button>Show all</button>
+          </a>
         </div>
         <div className="products">
+          <div className="product">
+          <a href="/products/tonkotsu">
           <img src="https://utfs.io/f/a134d67b-3f35-4ef1-8c2a-9eec27076b00_Tonkotsu%207.jpg" />
+          <p className="product-name">Tonkotsu</p>
+          </a>
+          </div>
+          <div className="product">
+          <a href="/products/miso">
           <img src="https://cannonkeys.com/cdn/shop/files/kYPY2T4_bb6bb292-ef15-49ce-a3b6-5d531dcebdc5_1080x.jpg?v=1686952825" />
+          <p className="product-name">Miso</p>
+          </a>
+          </div>
+          <div className="product">
+          <a href="/products/shoyu">
           <img src="https://utfs.io/f/afda2013-a995-4ae1-87d2-1ec78598960a_Shoyu%201.jpg" />
+          <p className="product-name">Shoyu</p>
+          </a>
+          </div>
         </div>
       </div>
       <div className="box_artisans">
@@ -32,7 +49,9 @@ export const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h5>
+          <a href="/aboutus">
           <button>More</button>
+          </a>
         </div>
         <div className="artisans">
           <img src="https://uploadthing.com/f/50b23d82-dc3f-43c7-a52d-cedb25722a09_Captura.PNG" />
