@@ -5,21 +5,45 @@
 .product {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .slider {
   margin-right: 50px;
 }
 
-.product-right {
-  margin-right: 200px;
+.product-details {
+  //margin-right: 200px;
+  position: relative;
+  justify-content: flex-start;
 }
 
-.more {
+.product-allimg {
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 150px;
+}
+
+.product-specs {
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.specs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.include {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hr {
@@ -32,7 +56,7 @@
   display: flex;
   gap: 14px;
 }
-button {
+.button {
   margin-top: 15px;
   appearance: none;
   background-color: #fafbfc;
@@ -61,33 +85,32 @@ button {
   word-wrap: break-word;
 }
 
-button:hover {
+.button:hover {
   background-color: #b2e6bd;
   text-decoration: none;
   transition-duration: 0.1s;
 }
 
-button:disabled {
+.button:disabled {
   background-color: #fafbfc;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959da5;
   cursor: default;
 }
 
-button:active {
+.button:active {
   background-color: #edeff2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
 
-button:focus {
+.button:focus {
   outline: 1px transparent;
 }
-
-button:before {
+.button:before {
   display: none;
 }
 
-button:-webkit-details-marker {
+.button:-webkit-details-marker {
   display: none;
 }

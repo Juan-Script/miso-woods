@@ -18,7 +18,7 @@ export const Home = () => {
             </h5>
           </div>
           <a href="/products">
-          <button>Show all</button>
+          <button className="button">Show all</button>
           </a>
         </div>
         <div className="products">
@@ -50,7 +50,7 @@ export const Home = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h5>
           <a href="/aboutus">
-          <button>More</button>
+          <button className="button">More</button>
           </a>
         </div>
         <div className="artisans">

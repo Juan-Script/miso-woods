@@ -41,7 +41,7 @@ export const CardProduct = () => {
           <Slider slides={slides} />
         </div>
 
-        <div className="product-right">
+        <div className="product-details">
           <h1>{slug}</h1>
           <h3>99$</h3>
           <p>Lorem ipsum dolor sit amet</p>
@@ -51,8 +51,10 @@ export const CardProduct = () => {
           </div>
         </div>
       </div>
-      <div className="productspecs">
-        <h3>Product</h3>
+      <div className="product-specs">
+        <div className="product-specs-title">
+          <h3>Product</h3>
+          </div>
         <hr className="hr" />
         <div className="specs">
           <h4>Specs</h4>
@@ -80,8 +82,8 @@ export const CardProduct = () => {
           large amount of 60% PCBs available.
         </div>
       </div>
-      <div className="images"></div>
-      <div className="more">
+      
+      <div className="product-allimg">
         {slides[0].image.map((slide: any) => (
           <div className="product-img">
             <img src={slide} alt={`img/${slide?.name}`} key={slide.image} />
